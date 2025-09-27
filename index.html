@@ -1,26 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
-  <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
-  <script language="javascript" type="text/javascript" src="suduko.js"></script>
-  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
-  
+  <meta charset="UTF-8">
   <title>Sudoku Game</title>
-
   <style>
-
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    #canvas-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
   </style>
 </head>
-
 <body>
-  <center>
-    <h1>Welcom to Sudoku Game</h1>
-  </center>
-  <div id="canvas-container" style="display:flex; justify-content:center; align-items:flex-start; margin-top:10px;">
-  </div>
+  <h1>Sudoku Game</h1>
+  <div id="canvas-container"></div>
+
+  <!-- โหลด p5.js -->
+  <script src="p5.min.js"></script>
+  <!-- โหลดโค้ดเกม -->
+  <script src="sketch.js"></script>
 </body>
 </html>
